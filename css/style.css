@@ -1,0 +1,79 @@
+.body{
+    border: 10px solid white; 
+    background: #4f4949; 
+}
+.header{
+    background: #756a6a;
+    display: block;
+    padding: 3px 0;
+}
+.header h1{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #ce4141;
+    text-align: center;
+    margin: 10px 0;
+}
+.big{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.small{
+    font-size: 14px;
+}
+.container{
+    width: 700px;
+    margin: 30px auto;
+    display: block;
+}
+.list{
+    height: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.list:nth-child(odd) {
+    background-color: rgb(149, 122, 151);
+    border: 2px solid rgb(149, 122, 151);
+}
+.list:nth-child(even) {
+    background-color: rgb(131, 108, 133);
+    border: 2px solid rgb(131, 108, 133);
+}
+.label{
+    display: inline-block;
+    width:97.5%;
+    color: white;
+    height: 30px;
+}
+.input:checked + .label {
+    text-decoration: line-through ;
+    color: rgb(188, 172, 196);
+    background-color: rgb(158, 134, 160)
+}
+.list:hover {
+    background-color: rgb(93, 73, 95);
+    border: 2px solid white;
+}
+.list:active {
+    background-color: #ce4141;  
+}
+.header p, .footer p{
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ce4141;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.footer{
+    padding: 4px 0;
+    background: #756a6a;
+}
+.footer:hover {
+    cursor: pointer;
+    filter: opacity(50%);
+}
