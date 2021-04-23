@@ -18,7 +18,7 @@
 .big{
     font-weight: bold;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1.8;
 }
 .small{
     font-size: 14px;
@@ -27,6 +27,16 @@
     width: 700px;
     margin: 30px auto;
     display: block;
+}
+input {
+    display: none;
+}
+.field {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 .list{
     height: 30px;
@@ -43,14 +53,18 @@
 }
 .label{
     display: inline-block;
-    width:97.5%;
+    width:calc(100% - 30px);
     color: white;
     height: 30px;
+    padding-left: 30px;
+    position: relative;
 }
-.input:checked + .label {
+.input:checked + .label  {
     text-decoration: line-through ;
     color: rgb(188, 172, 196);
-    background-color: rgb(158, 134, 160)
+    background-color: rgb(158, 134, 160);
+    background: url(../img/tic.png) 0 0 no-repeat;
+    background-size: contain;
 }
 .list:hover {
     background-color: rgb(93, 73, 95);
